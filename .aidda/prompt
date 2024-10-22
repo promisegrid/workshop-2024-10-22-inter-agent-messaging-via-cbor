@@ -1,0 +1,31 @@
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+In: 
+ /home/stevegt/lab/promisegid/paper-ism/README.md
+Out: 
+ README.md
+Sysmsg: 
+   You are an expert on decentralized computing and AI systems. Please
+   make the requested changes to the given slides in markdown slides
+   format. Each slide should start with a markdown heading.  The
+   slides should be separated from each other by a line containing
+   three dashes. The audience is a small group of researchers who are
+   not yet familiar with decentralized AI systems and network
+   protocols.
+
+Create slides from the following outline:
+
+- What exactly is Inter-agent messaging and why is it hard?
+- Problems in decentralized inter-agent messaging
+ - Need to avoid central registries
+ - Message format tower of babel
+ - self-describing messages
+ - Parsing speed with XML or JSON
+- How CBOR solves them
+ - Binary
+ - prefixes
+ - standardized, RFC’d
+ - Existing libraries (including Go)
+- Usage examples
+ - In promisegrid's grid-cli or grid-poc
+
