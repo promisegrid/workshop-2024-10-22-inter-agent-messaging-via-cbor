@@ -1,0 +1,70 @@
+
+File: /home/stevegt/lab/cswg/workshop-2024-10-22-inter-agent-messaging-via-cbor/README.md
+```markdown
+# Inter-agent Messaging via CBOR
+
+---
+
+## What Exactly is Inter-agent Messaging and Why is it Hard?
+
+- Inter-agent messaging refers to the communication between autonomous agents in a distributed system.
+- Challenges include ensuring reliable message exchanges and maintaining a shared understanding without central control.
+- Agents need to operate in heterogeneous environments where scalability is a critical factor.
+
+---
+
+## Problems in Decentralized Inter-agent Messaging
+
+### Need to Avoid Central Registries
+
+- Central registries can become single points of failure and scalability bottlenecks.
+- Decentralized systems require mechanisms to function independently of central authorities.
+
+### Message Format Tower of Babel
+
+- Different agents might use incompatible message formats, leading to communication breakdowns.
+- Standardizing message formats is crucial but hard to achieve in a decentralized context.
+
+### Self-describing Messages
+
+- Important for agents to interpret messages without prior knowledge of the format.
+- Ensures interoperability by embedding schema information within messages themselves.
+
+### Parsing Speed with XML or JSON
+
+- Traditional formats like XML or JSON can be verbose and slow to parse.
+- Reducing parsing overhead is necessary for performance in real-time systems.
+
+---
+
+## What is CBOR and How Does it Solve These Problems?
+
+### Binary
+
+- CBOR (Concise Binary Object Representation) is a binary format that reduces message size and parsing time.
+- Improves efficiency in resource-constrained environments.
+
+### Prefixes
+
+- CBOR messages include prefixes that indicate data types, aiding in quick parsing.
+
+### Standardized, RFC'd
+
+- CBOR is an established standard with RFC (Request for Comments) documentation, ensuring broad adoption and support.
+
+### Existing Libraries (Including Go)
+
+- Multiple languages, including Go, have CBOR libraries, facilitating integration across different platforms.
+- These libraries simplify encoding and decoding tasks, leveraging the benefits of CBOR out-of-the-box.
+
+---
+
+## Usage Examples
+
+### In Promisegrid's Grid-cli or Grid-poc
+
+- CBOR is used to transfer messages in Promisegrid's implementations, demonstrating practical, real-world applications.
+- These examples highlight CBOR's capability in distributed computing scenarios, showing its impact on reducing complexity and enhancing communication between agents.
+
+```
+EOF_/home/stevegt/lab/cswg/workshop-2024-10-22-inter-agent-messaging-via-cbor/README.md
