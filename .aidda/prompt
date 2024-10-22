@@ -15,13 +15,14 @@ Sysmsg:
 
 Create slides from the following outline:
 
+Inter-agent messaging via CBOR
 - What exactly is Inter-agent messaging and why is it hard?
 - Problems in decentralized inter-agent messaging
  - Need to avoid central registries
  - Message format tower of babel
  - self-describing messages
  - Parsing speed with XML or JSON
-- How CBOR solves them
+- What is CBOR and how does it solve these problems?
  - Binary
  - prefixes
  - standardized, RFC’d
